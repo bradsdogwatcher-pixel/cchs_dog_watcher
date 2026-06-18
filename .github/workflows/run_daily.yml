@@ -1,9 +1,6 @@
 name: Daily PetHarbor Monitor and Email V2
 
 on:
-  schedule:
-    # 23:17 UTC is exactly 7:17 PM Eastern Time - cron: '17 23 * * 1-6'
-    - cron: '*/15 * * * *'
   workflow_dispatch: # Allows you to trigger it manually via a button on GitHub
 
 jobs:

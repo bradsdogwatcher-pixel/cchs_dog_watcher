@@ -148,6 +148,9 @@ def _image_path(dog_id):
 
 
 def cache_image(dog_id, img_url):
+    if os.path.exists(IMAGES_DIR) and not os.path.isdir(IMAGES_DIR):
+        print(f"WARNING: {IMAGES_DIR} exists as a file — removing it.")
+        os.remove(IMAGES_DIR)
     os.makedirs(IMAGES_DIR, exist_ok=True)
     path = _image_path(dog_id)
     if os.path.exists(path):

@@ -6,13 +6,6 @@
         "breed": "Pit Bull Terrier",
         "age": "1 year, 11 months old"
     },
-    "A120678": {
-        "name": "GUNNER (A120678)",
-        "gender": "Male",
-        "color": "Tan",
-        "breed": "Pit Bull Terrier",
-        "age": "5 years old"
-    },
     "A120806": {
         "name": "SHELBY (A120806)",
         "gender": "Female",
@@ -76,5 +69,5 @@
         "breed": "Pit Bull Terrier",
         "age": "1 year, 6 months old"
     },
-    "__last_run__": "June 18, 2026 01:55 PM"
+    "__last_run__": "June 18, 2026 01:59 PM"
 }

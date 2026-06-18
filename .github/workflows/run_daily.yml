@@ -1,4 +1,4 @@
-name: Daily PetHarbor Monitor and Email
+name: Daily PetHarbor Monitor and Email V2
 
 on:
   schedule:

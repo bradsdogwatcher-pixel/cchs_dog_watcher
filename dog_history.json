@@ -1,2 +1,73 @@
-{    "__last_run__": "June 18, 2026 01:32 PM"
+{
+    "A114182": {
+        "name": "ROOKIE (A114182)",
+        "gender": "Male",
+        "color": "Tan",
+        "breed": "Pit Bull Terrier",
+        "age": "1 year, 11 months old"
+    },
+    "A120806": {
+        "name": "SHELBY (A120806)",
+        "gender": "Female",
+        "color": "Brown",
+        "breed": "American Bulldog and Labrador Retriever",
+        "age": "2 years, 5 months old"
+    },
+    "A122593": {
+        "name": "SAGE (A122593)",
+        "gender": "Female",
+        "color": "Brown",
+        "breed": "Pit Bull Terrier",
+        "age": "1 year"
+    },
+    "A123067": {
+        "name": "RADO (A123067)",
+        "gender": "Male",
+        "color": "Cream",
+        "breed": "Golden Retriever mix",
+        "age": "2 years, 1 month old"
+    },
+    "A123519": {
+        "name": "MARCO (A123519)",
+        "gender": "Male",
+        "color": "Brown",
+        "breed": "German Shepherd Dog mix",
+        "age": "6 months old"
+    },
+    "A123547": {
+        "name": "WING (A123547)",
+        "gender": "Female",
+        "color": "White",
+        "breed": "Pit Bull Terrier mix",
+        "age": "5 months old"
+    },
+    "A123577": {
+        "name": "FAWN (A123577)",
+        "gender": "Female",
+        "color": "Fawn",
+        "breed": "American Pit Bull Terrier",
+        "age": "3 years old"
+    },
+    "A123651": {
+        "name": "ARIEL (A123651)",
+        "gender": "Female",
+        "color": "Brown",
+        "breed": "Pit Bull Terrier mix",
+        "age": "1 year"
+    },
+    "A123858": {
+        "name": "KALI (A123858)",
+        "gender": "Female",
+        "color": "Br brindle",
+        "breed": "Pit Bull Terrier",
+        "age": "2 years"
+    },
+    "A123952": {
+        "name": "RED (A123952)",
+        "gender": "Male",
+        "color": "Brown",
+        "breed": "Pit Bull Terrier",
+        "age": "1 year, 6 months old"
+    },
+    "__last_run__": "June 18, 2026 01:55 PM"
 }

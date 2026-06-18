@@ -1,7 +1,7 @@
 name: Daily PetHarbor Monitor and Email V2
 
 on:
-  workflow_dispatch: # Allows you to trigger it manually via a button on GitHub
+  workflow_dispatch: # Triggered externally or manually via a button on GitHub
 
 jobs:
   run-monitor:
@@ -34,6 +34,6 @@ jobs:
       run: |
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
-        git add dog_history.json
-        # Only commit if the json history file changed
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update dog history baseline" && git push)
+        git add dog_history.json DogImages/
+        # Only commit if anything changed
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update dog history and image cache" && git push)

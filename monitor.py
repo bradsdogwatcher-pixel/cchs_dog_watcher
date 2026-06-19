@@ -251,26 +251,29 @@ def dog_card_html(dog_id, info, cid_prefix, img_url=None, bordered=True):
     img_bytes  = load_image_bytes(dog_id, img_url or info.get("img_url"))
     detail_url = f"{BASE_URL}pet.asp?uaid=CARR.{dog_id}"
     img_html   = (
-        f'<a href="{detail_url}" target="_blank" style="display:block;">'
-        f'<img src="cid:{cid}" style="display:block;margin:0 0 6px 0;"></a>'
+        f'<a href="{detail_url}" target="_blank">'
+        f'<img src="cid:{cid}" style="display:block;width:{IMG_MAX_W}px;max-width:100%;border:0;"></a>'
         if img_bytes else
         f'<a href="{detail_url}" target="_blank"><em>(no photo -- click to view)</em></a>'
     )
-    rows = "".join(
+    detail_rows = "".join(
         f'<tr><td style="color:#666;padding-right:10px;"><b>{label}</b></td>'
         f'<td>{info.get(key, "") or "&mdash;"}</td></tr>'
         for label, key in [("Gender", "gender"), ("Color", "color"),
                             ("Breed", "breed"),  ("Age",   "age")]
     )
-    div_style = ("margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid #ddd;"
-                 if bordered else "")
+    border_style = "border-bottom:1px solid #ddd;padding-bottom:16px;margin-bottom:20px;" if bordered else ""
     card = f"""
-    <div style="{div_style}">
-        {img_html}
-        <strong style="font-size:1.1em;">{info['name']}</strong>
-        <span style="color:#888;font-size:0.85em;"> &mdash; ID: {dog_id}</span><br>
-        <table style="margin:4px 0;font-size:0.9em;border-collapse:collapse;">{rows}</table>
-    </div>"""
+    <table style="border-collapse:collapse;width:100%;{border_style}">
+        <tr><td style="padding:0;">{img_html}</td></tr>
+        <tr><td style="padding:4px 0 0 0;">
+            <strong style="font-size:1.1em;">{info['name']}</strong>
+            <span style="color:#888;font-size:0.85em;"> &mdash; ID: {dog_id}</span>
+        </td></tr>
+        <tr><td style="padding:0;">
+            <table style="margin:4px 0;font-size:0.9em;border-collapse:collapse;">{detail_rows}</table>
+        </td></tr>
+    </table>"""
     return card, (cid, img_bytes) if img_bytes else None
 
 

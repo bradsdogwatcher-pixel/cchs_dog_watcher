@@ -251,8 +251,8 @@ def dog_card_html(dog_id, info, cid_prefix, img_url=None, bordered=True):
     img_bytes  = load_image_bytes(dog_id, img_url or info.get("img_url"))
     detail_url = f"{BASE_URL}pet.asp?uaid=CARR.{dog_id}"
     img_html   = (
-        f'<a href="{detail_url}" target="_blank">'
-        f'<img src="cid:{cid}" style="display:block;margin:6px 0;"></a>'
+        f'<a href="{detail_url}" target="_blank" style="display:block;">'
+        f'<img src="cid:{cid}" style="display:block;margin:0 0 6px 0;"></a>'
         if img_bytes else
         f'<a href="{detail_url}" target="_blank"><em>(no photo -- click to view)</em></a>'
     )

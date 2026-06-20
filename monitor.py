@@ -268,7 +268,6 @@ def dog_card_html(dog_id, info, cid_prefix, img_url=None, bordered=True):
         <tr><td style="padding:0;">{img_html}</td></tr>
         <tr><td style="padding:4px 0 0 0;">
             <strong style="font-size:1.1em;">{info['name']}</strong>
-            <span style="color:#888;font-size:0.85em;"> &mdash; ID: {dog_id}</span>
         </td></tr>
         <tr><td style="padding:0;">
             <table style="margin:4px 0;font-size:0.9em;border-collapse:collapse;">{detail_rows}</table>

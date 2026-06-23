@@ -20,13 +20,6 @@
         "breed": "Golden Retriever mix",
         "age": "2 years, 1 month old"
     },
-    "A123547": {
-        "name": "WING (A123547)",
-        "gender": "Female",
-        "color": "White",
-        "breed": "Pit Bull Terrier mix",
-        "age": "5 months old"
-    },
     "A123577": {
         "name": "FAWN (A123577)",
         "gender": "Female",
@@ -62,5 +55,5 @@
         "breed": "Hound mix",
         "age": "4 years old"
     },
-    "__last_run__": "June 22, 2026 11:30 PM"
+    "__last_run__": "June 23, 2026 11:30 PM"
 }

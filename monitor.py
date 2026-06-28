@@ -20,7 +20,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # or as real env vars locally — never hardcoded here)
 SENDER_EMAIL   = os.environ.get("SENDER_EMAIL",   "bradsdogwatcher@gmail.com")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD",  "")
-RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL",  SENDER_EMAIL)
+RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL",  "bradr2005@gmail.com")
 
 URL      = ("https://petharbor.com/results.asp?searchtype=ADOPT&start=4&miles=20"
             "&shelterlist=%27CARR%27&zip=&where=type_DOG&friends=0&rows&nosuccess=1"

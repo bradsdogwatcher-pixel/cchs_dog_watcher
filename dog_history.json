@@ -13,34 +13,6 @@
         "breed": "Pit Bull Terrier",
         "age": "2 years"
     },
-    "A119051": {
-        "name": "CHIEF (A119051)",
-        "gender": "Male",
-        "color": "Black",
-        "breed": "Siberian Husky",
-        "age": "1 year, 1 month old"
-    },
-    "A119933": {
-        "name": "ROXIE (A119933)",
-        "gender": "Female",
-        "color": "Br brindle",
-        "breed": "Pit Bull Terrier mix",
-        "age": "1 year, 7 months old"
-    },
-    "A122593": {
-        "name": "SAGE (A122593)",
-        "gender": "Female",
-        "color": "Brown",
-        "breed": "Pit Bull Terrier",
-        "age": "1 year, 1 month old"
-    },
-    "A123067": {
-        "name": "RADO (A123067)",
-        "gender": "Male",
-        "color": "Cream",
-        "breed": "Golden Retriever mix",
-        "age": "2 years, 2 months old"
-    },
     "A123280": {
         "name": "CYRUS (A123280)",
         "gender": "Male",
@@ -104,13 +76,6 @@
         "breed": "Rottweiler",
         "age": "8 years old"
     },
-    "A124413": {
-        "name": "WAFFLE (A124413)",
-        "gender": "Female",
-        "color": "White",
-        "breed": "Labrador Retriever and Pit Bull Terrier",
-        "age": "8 months old"
-    },
     "A124416": {
         "name": "ARCHER (A124416)",
         "gender": "Male",
@@ -125,5 +90,5 @@
         "breed": "Pit Bull Terrier and Labrador Retriever",
         "age": "8 months old"
     },
-    "__last_run__": "July 01, 2026 11:30 PM"
+    "__last_run__": "July 02, 2026 11:30 PM"
 }

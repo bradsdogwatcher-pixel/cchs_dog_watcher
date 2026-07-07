@@ -147,19 +147,36 @@ def _image_path(dog_id):
     return os.path.join(IMAGES_DIR, f"{dog_id}.jpg")
 
 
+# petharbor.com returns this fixed "No Image Available" graphic with HTTP 200
+# when a listing has no photo yet -- it must not be cached as if it were a
+# real photo, or the dog gets stuck without a picture even after petharbor
+# uploads one.
+PLACEHOLDER_IMAGE_MD5 = "bf40a50d09ce832e74e4881acd7b33ff"
+
+
+def _is_placeholder_image(content):
+    import hashlib
+    return hashlib.md5(content).hexdigest() == PLACEHOLDER_IMAGE_MD5
+
+
 def _fetch_image_bytes(dog_id, img_url, max_retries=3, retry_delay=3):
     for attempt in range(1, max_retries + 1):
         try:
             r = requests.get(img_url, headers=HEADERS, timeout=10, verify=False)
             if r.status_code == 200 and r.content:
-                return r.content
-            print(f"  Image fetch for {dog_id} (attempt {attempt}/{max_retries}): "
-                  f"HTTP {r.status_code}, {len(r.content)} bytes")
+                if _is_placeholder_image(r.content):
+                    print(f"  Image fetch for {dog_id} (attempt {attempt}/{max_retries}): "
+                          f"petharbor has no photo yet (placeholder image returned).")
+                else:
+                    return r.content
+            else:
+                print(f"  Image fetch for {dog_id} (attempt {attempt}/{max_retries}): "
+                      f"HTTP {r.status_code}, {len(r.content)} bytes")
         except Exception as e:
             print(f"  Image fetch for {dog_id} (attempt {attempt}/{max_retries}) raised: {e}")
         if attempt < max_retries:
             time.sleep(retry_delay)
-    print(f"  WARNING: giving up fetching image for {dog_id} after {max_retries} attempts.")
+    print(f"  WARNING: no real photo available for {dog_id} after {max_retries} attempts.")
     return None
 
 
@@ -170,7 +187,11 @@ def cache_image(dog_id, img_url):
     os.makedirs(IMAGES_DIR, exist_ok=True)
     path = _image_path(dog_id)
     if os.path.exists(path):
-        return path
+        with open(path, "rb") as f:
+            cached = f.read()
+        if not _is_placeholder_image(cached):
+            return path
+        print(f"  Cached image for {dog_id} is petharbor's placeholder -- retrying fetch.")
     content = _fetch_image_bytes(dog_id, img_url)
     if content:
         with open(path, "wb") as f:
@@ -198,7 +219,11 @@ def load_image_bytes(dog_id, img_url=None):
     path = _image_path(dog_id)
     if os.path.exists(path):
         with open(path, "rb") as f:
-            raw = f.read()
+            cached = f.read()
+        if not _is_placeholder_image(cached):
+            raw = cached
+        elif img_url:
+            raw = _fetch_image_bytes(dog_id, img_url)
     elif img_url:
         raw = _fetch_image_bytes(dog_id, img_url)
     if raw:

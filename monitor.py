@@ -20,7 +20,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # or as real env vars locally — never hardcoded here)
 SENDER_EMAIL   = os.environ.get("SENDER_EMAIL",   "bradsdogwatcher@gmail.com")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD",  "")
-RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL",  "bradr2005@gmail.com")
+RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL",  SENDER_EMAIL)
 
 URL      = ("https://petharbor.com/results.asp?searchtype=ADOPT&start=4&miles=20"
             "&shelterlist=%27CARR%27&zip=&where=type_DOG&friends=0&rows&nosuccess=1"
@@ -147,6 +147,22 @@ def _image_path(dog_id):
     return os.path.join(IMAGES_DIR, f"{dog_id}.jpg")
 
 
+def _fetch_image_bytes(dog_id, img_url, max_retries=3, retry_delay=3):
+    for attempt in range(1, max_retries + 1):
+        try:
+            r = requests.get(img_url, headers=HEADERS, timeout=10, verify=False)
+            if r.status_code == 200 and r.content:
+                return r.content
+            print(f"  Image fetch for {dog_id} (attempt {attempt}/{max_retries}): "
+                  f"HTTP {r.status_code}, {len(r.content)} bytes")
+        except Exception as e:
+            print(f"  Image fetch for {dog_id} (attempt {attempt}/{max_retries}) raised: {e}")
+        if attempt < max_retries:
+            time.sleep(retry_delay)
+    print(f"  WARNING: giving up fetching image for {dog_id} after {max_retries} attempts.")
+    return None
+
+
 def cache_image(dog_id, img_url):
     if os.path.exists(IMAGES_DIR) and not os.path.isdir(IMAGES_DIR):
         print(f"WARNING: {IMAGES_DIR} exists as a file — removing it.")
@@ -155,14 +171,11 @@ def cache_image(dog_id, img_url):
     path = _image_path(dog_id)
     if os.path.exists(path):
         return path
-    try:
-        r = requests.get(img_url, headers=HEADERS, timeout=10, verify=False)
-        if r.status_code == 200 and r.content:
-            with open(path, "wb") as f:
-                f.write(r.content)
-            return path
-    except Exception:
-        pass
+    content = _fetch_image_bytes(dog_id, img_url)
+    if content:
+        with open(path, "wb") as f:
+            f.write(content)
+        return path
     return None
 
 
@@ -187,16 +200,12 @@ def load_image_bytes(dog_id, img_url=None):
         with open(path, "rb") as f:
             raw = f.read()
     elif img_url:
-        try:
-            r = requests.get(img_url, headers=HEADERS, timeout=10, verify=False)
-            if r.status_code == 200 and r.content:
-                raw = r.content
-        except Exception:
-            pass
+        raw = _fetch_image_bytes(dog_id, img_url)
     if raw:
         try:
             return _resize_bytes(raw)
-        except Exception:
+        except Exception as e:
+            print(f"  WARNING: could not resize image for {dog_id} ({e}); using raw bytes.")
             return raw
     return None
 

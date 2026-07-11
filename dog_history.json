@@ -1,11 +1,4 @@
 {
-    "A112973": {
-        "name": "MARCY (A112973)",
-        "gender": "Female",
-        "color": "White",
-        "breed": "Staffordshire Bull Terrier",
-        "age": "3 years old"
-    },
     "A114182": {
         "name": "ROOKIE (A114182)",
         "gender": "Male",
@@ -76,5 +69,19 @@
         "breed": "American Pit Bull Terrier and Labrador Retriever",
         "age": "5 years old"
     },
-    "__last_run__": "July 10, 2026 11:30 PM"
+    "A124590": {
+        "name": "BANJO (A124590)",
+        "gender": "Male",
+        "color": "White",
+        "breed": "Beagle",
+        "age": "2 years"
+    },
+    "A124638": {
+        "name": "WAYLON (A124638)",
+        "gender": "Male",
+        "color": "Gray",
+        "breed": "Anatolian Shepherd mix",
+        "age": "6 years old"
+    },
+    "__last_run__": "July 11, 2026 11:30 PM"
 }

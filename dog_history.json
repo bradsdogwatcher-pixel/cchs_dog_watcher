@@ -76,13 +76,6 @@
         "breed": "Beagle",
         "age": "2 years"
     },
-    "A124638": {
-        "name": "WAYLON (A124638)",
-        "gender": "Male",
-        "color": "Gray",
-        "breed": "Anatolian Shepherd mix",
-        "age": "6 years old"
-    },
     "A124643": {
         "name": "DODGER (A124643)",
         "gender": "Male",
@@ -104,5 +97,5 @@
         "breed": "Lhasa Apso mix",
         "age": "8 years old"
     },
-    "__last_run__": "July 15, 2026 11:30 PM"
+    "__last_run__": "July 16, 2026 11:30 PM"
 }

@@ -6,13 +6,6 @@
         "breed": "Pit Bull Terrier",
         "age": "2 years, 1 month old"
     },
-    "A118983": {
-        "name": "STELLA (A118983)",
-        "gender": "Female",
-        "color": "Red",
-        "breed": "Border Collie mix",
-        "age": "3 years old"
-    },
     "A119933": {
         "name": "ROXIE (A119933)",
         "gender": "Female",
@@ -41,13 +34,6 @@
         "breed": "Hound mix",
         "age": "4 years old"
     },
-    "A124266": {
-        "name": "PEPPA (A124266)",
-        "gender": "Female",
-        "color": "Black",
-        "breed": "Rottweiler",
-        "age": "5 years old"
-    },
     "A124341": {
         "name": "DREAM (A124341)",
         "gender": "Female",
@@ -61,13 +47,6 @@
         "color": "White",
         "breed": "American Pit Bull Terrier and Labrador Retriever",
         "age": "5 years old"
-    },
-    "A124767": {
-        "name": "UNO (A124767)",
-        "gender": "Female",
-        "color": "Tricolor",
-        "breed": "Welsh Corgi - Pembroke",
-        "age": "7 years old"
     },
     "A125061": {
         "name": "RUBY (A125061)",
@@ -83,5 +62,5 @@
         "breed": "Border Collie",
         "age": "8 months old"
     },
-    "__last_run__": "August 01, 2026 11:30 PM"
+    "__last_run__": "August 03, 2026 11:30 PM"
 }

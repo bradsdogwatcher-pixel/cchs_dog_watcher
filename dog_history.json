@@ -27,13 +27,6 @@
         "breed": "American Pit Bull Terrier",
         "age": "3 years old"
     },
-    "A124187": {
-        "name": "AGATHA (A124187)",
-        "gender": "Female",
-        "color": "Tan",
-        "breed": "Hound mix",
-        "age": "4 years old"
-    },
     "A124341": {
         "name": "DREAM (A124341)",
         "gender": "Female",
@@ -69,5 +62,5 @@
         "breed": "Pomeranian",
         "age": "4 years old"
     },
-    "__last_run__": "August 08, 2026 11:30 PM"
+    "__last_run__": "August 10, 2026 11:30 PM"
 }

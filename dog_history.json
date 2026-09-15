@@ -20,13 +20,6 @@
         "breed": "Beagle",
         "age": "1 year, 3 months old"
     },
-    "A124283": {
-        "name": "LILY (A124283)",
-        "gender": "Female",
-        "color": "Bl brindle",
-        "breed": "Beagle",
-        "age": "1 year, 3 months old"
-    },
     "A124341": {
         "name": "DREAM (A124341)",
         "gender": "Female",
@@ -104,5 +97,5 @@
         "breed": "Pit Bull Terrier",
         "age": "3 years old"
     },
-    "__last_run__": "September 14, 2026 11:30 PM"
+    "__last_run__": "September 15, 2026 11:30 PM"
 }

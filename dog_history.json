@@ -4,7 +4,7 @@
         "gender": "Male",
         "color": "Tan",
         "breed": "Pit Bull Terrier",
-        "age": "2 years, 2 months old"
+        "age": "2 years, 3 months old"
     },
     "A118465": {
         "name": "STELLA (A118465)",
@@ -12,6 +12,13 @@
         "color": "Gray",
         "breed": "Pit Bull Terrier",
         "age": "3 years old"
+    },
+    "A119714": {
+        "name": "TED (A119714)",
+        "gender": "Male",
+        "color": "Tan",
+        "breed": "Labrador Retriever and Pit Bull Terrier",
+        "age": "1 year, 2 months old"
     },
     "A122370": {
         "name": "CHAMP (A122370)",
@@ -41,40 +48,12 @@
         "breed": "Pit Bull Terrier mix",
         "age": "7 years old"
     },
-    "A125338": {
-        "name": "LILLIEBELLE (A125338)",
-        "gender": "Female",
-        "color": "Black",
-        "breed": "Siberian Husky",
-        "age": "2 years, 10 months old"
-    },
     "A125525": {
         "name": "NELLY (A125525)",
         "gender": "Female",
         "color": "Gray",
         "breed": "Cane Corso",
-        "age": "2 years, 1 month old"
-    },
-    "A125778": {
-        "name": "CASH (A125778)",
-        "gender": "Male",
-        "color": "Tricolor",
-        "breed": "Beagle and American Foxhound",
-        "age": "3 months old"
-    },
-    "A125780": {
-        "name": "JOLENE (A125780)",
-        "gender": "Female",
-        "color": "Tricolor",
-        "breed": "Beagle and American Foxhound",
-        "age": "3 months old"
-    },
-    "A125782": {
-        "name": "LORETTA (A125782)",
-        "gender": "Female",
-        "color": "Tricolor",
-        "breed": "Beagle and American Foxhound",
-        "age": "3 months old"
+        "age": "2 years, 2 months old"
     },
     "A125789": {
         "name": "ZARI (A125789)",
@@ -97,6 +76,20 @@
         "breed": "Pit Bull Terrier mix",
         "age": "3 years old"
     },
+    "A126189": {
+        "name": "BINGO (A126189)",
+        "gender": "Male",
+        "color": "Black",
+        "breed": "Bearded Collie and Shetland Sheepdog",
+        "age": "4 years old"
+    },
+    "A126258": {
+        "name": "ROO (A126258)",
+        "gender": "Male",
+        "color": "Bl brindle",
+        "breed": "Catahoula Leopard Hound mix",
+        "age": "3 years old"
+    },
     "A126285": {
         "name": "NALA (A126285)",
         "gender": "Female",
@@ -104,5 +97,12 @@
         "breed": "Pit Bull Terrier",
         "age": "8 years old"
     },
-    "__last_run__": "September 30, 2026 11:30 PM"
+    "A126442": {
+        "name": "CODY (A126442)",
+        "gender": "Male",
+        "color": "White",
+        "breed": "German Shepherd Dog mix",
+        "age": "3 years old"
+    },
+    "__last_run__": "October 02, 2026 11:30 PM"
 }

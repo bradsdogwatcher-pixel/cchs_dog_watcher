@@ -90,13 +90,6 @@
         "breed": "Catahoula Leopard Hound mix",
         "age": "3 years old"
     },
-    "A126285": {
-        "name": "NALA (A126285)",
-        "gender": "Female",
-        "color": "Bl brindle",
-        "breed": "Pit Bull Terrier",
-        "age": "8 years old"
-    },
     "A126442": {
         "name": "CODY (A126442)",
         "gender": "Male",
@@ -104,5 +97,5 @@
         "breed": "German Shepherd Dog mix",
         "age": "3 years old"
     },
-    "__last_run__": "October 02, 2026 11:30 PM"
+    "__last_run__": "October 03, 2026 11:30 PM"
 }

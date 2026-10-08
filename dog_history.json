@@ -55,13 +55,6 @@
         "breed": "Pit Bull Terrier",
         "age": "3 years old"
     },
-    "A125248": {
-        "name": "AURORA (A125248)",
-        "gender": "Female",
-        "color": "Black",
-        "breed": "Pit Bull Terrier mix",
-        "age": "7 years old"
-    },
     "A125789": {
         "name": "ZARI (A125789)",
         "gender": "Female",
@@ -111,5 +104,5 @@
         "breed": "German Shepherd Dog mix",
         "age": "3 years old"
     },
-    "__last_run__": "October 07, 2026 11:30 PM"
+    "__last_run__": "October 08, 2026 11:30 PM"
 }

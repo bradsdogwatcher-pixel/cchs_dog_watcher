@@ -1,11 +1,4 @@
 {
-    "A114182": {
-        "name": "ROOKIE (A114182)",
-        "gender": "Male",
-        "color": "Tan",
-        "breed": "Pit Bull Terrier mix",
-        "age": "2 years, 3 months old"
-    },
     "A118465": {
         "name": "STELLA (A118465)",
         "gender": "Female",
@@ -32,20 +25,6 @@
         "gender": "Female",
         "color": "Black",
         "breed": "Siberian Husky",
-        "age": "4 years old"
-    },
-    "A126182": {
-        "name": "DIEGO (A126182)",
-        "gender": "Male",
-        "color": "Brown",
-        "breed": "Pit Bull Terrier mix",
-        "age": "3 years old"
-    },
-    "A126189": {
-        "name": "BINGO (A126189)",
-        "gender": "Male",
-        "color": "Black",
-        "breed": "Bearded Collie and Shetland Sheepdog",
         "age": "4 years old"
     },
     "A126383": {
@@ -76,13 +55,6 @@
         "breed": "Labrador Retriever and Catahoula Leopard Hound",
         "age": "2 years"
     },
-    "A126558": {
-        "name": "LAYLA (A126558)",
-        "gender": "Female",
-        "color": "Brown",
-        "breed": "Collie - Smooth mix",
-        "age": "7 years old"
-    },
     "A126797": {
         "name": "BANE (A126797)",
         "gender": "Male",
@@ -90,5 +62,5 @@
         "breed": "Cane Corso",
         "age": "3 years old"
     },
-    "__last_run__": "October 27, 2026 11:30 PM"
+    "__last_run__": "October 28, 2026 11:30 PM"
 }

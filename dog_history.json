@@ -13,12 +13,26 @@
         "breed": "Labrador Retriever and Pit Bull Terrier",
         "age": "1 year, 2 months old"
     },
+    "A121296": {
+        "name": "LAYLA (A121296)",
+        "gender": "Female",
+        "color": "White",
+        "breed": "Pit Bull Terrier mix",
+        "age": "10 months old"
+    },
     "A123577": {
         "name": "FAWN (A123577)",
         "gender": "Female",
         "color": "Fawn",
         "breed": "American Pit Bull Terrier",
         "age": "3 years old"
+    },
+    "A124268": {
+        "name": "MAPLE (A124268)",
+        "gender": "Female",
+        "color": "Cream",
+        "breed": "Golden Retriever mix",
+        "age": "2 years, 4 months old"
     },
     "A126384": {
         "name": "RED (A126384)",
@@ -34,19 +48,19 @@
         "breed": "German Shepherd Dog mix",
         "age": "3 years old"
     },
-    "A126544": {
-        "name": "MILO (A126544)",
-        "gender": "Male",
-        "color": "Blue merle",
-        "breed": "Labrador Retriever and Catahoula Leopard Hound",
-        "age": "2 years"
-    },
-    "A126546": {
-        "name": "MEEKO (A126546)",
-        "gender": "Male",
+    "A126766": {
+        "name": "ALMA (A126766)",
+        "gender": "Female",
         "color": "Black",
-        "breed": "Poodle - Standard and Labrador Retriever",
-        "age": "2 years"
+        "breed": "Border Collie mix",
+        "age": "9 months old"
+    },
+    "A126767": {
+        "name": "CLYDE (A126767)",
+        "gender": "Male",
+        "color": "Tan",
+        "breed": "Poodle - Miniature mix",
+        "age": "9 months old"
     },
     "A126988": {
         "name": "JOLIE (A126988)",
@@ -69,5 +83,5 @@
         "breed": "Pit Bull Terrier",
         "age": "2 years"
     },
-    "__last_run__": "October 29, 2026 11:30 PM"
+    "__last_run__": "October 30, 2026 11:30 PM"
 }

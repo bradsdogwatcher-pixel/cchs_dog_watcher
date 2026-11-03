@@ -11,14 +11,14 @@
         "gender": "Male",
         "color": "Tan",
         "breed": "Labrador Retriever and Pit Bull Terrier",
-        "age": "1 year, 2 months old"
+        "age": "1 year, 3 months old"
     },
     "A121296": {
         "name": "LAYLA (A121296)",
         "gender": "Female",
         "color": "White",
         "breed": "Pit Bull Terrier mix",
-        "age": "10 months old"
+        "age": "11 months old"
     },
     "A123577": {
         "name": "FAWN (A123577)",
@@ -27,40 +27,26 @@
         "breed": "American Pit Bull Terrier",
         "age": "3 years old"
     },
-    "A124268": {
-        "name": "MAPLE (A124268)",
-        "gender": "Female",
-        "color": "Cream",
-        "breed": "Golden Retriever mix",
-        "age": "2 years, 4 months old"
-    },
     "A126384": {
         "name": "RED (A126384)",
         "gender": "Male",
         "color": "Red",
         "breed": "Pit Bull Terrier",
-        "age": "1 year"
+        "age": "1 year, 1 month old"
     },
-    "A126442": {
-        "name": "CODY (A126442)",
+    "A126631": {
+        "name": "ARLO (A126631)",
         "gender": "Male",
-        "color": "White",
-        "breed": "German Shepherd Dog mix",
-        "age": "3 years old"
+        "color": "Tan",
+        "breed": "Labrador Retriever mix",
+        "age": "1 year, 1 month old"
     },
     "A126766": {
         "name": "ALMA (A126766)",
         "gender": "Female",
         "color": "Black",
         "breed": "Border Collie mix",
-        "age": "9 months old"
-    },
-    "A126767": {
-        "name": "CLYDE (A126767)",
-        "gender": "Male",
-        "color": "Tan",
-        "breed": "Poodle - Miniature mix",
-        "age": "9 months old"
+        "age": "10 months old"
     },
     "A126988": {
         "name": "JOLIE (A126988)",
@@ -81,7 +67,7 @@
         "gender": "Male",
         "color": "Br brindle",
         "breed": "Pit Bull Terrier",
-        "age": "2 years"
+        "age": "2 years, 1 month old"
     },
-    "__last_run__": "October 31, 2026 11:30 PM"
+    "__last_run__": "November 03, 2026 12:30 AM"
 }

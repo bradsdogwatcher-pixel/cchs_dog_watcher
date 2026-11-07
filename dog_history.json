@@ -1,11 +1,4 @@
 {
-    "A110388": {
-        "name": "CIARA (A110388)",
-        "gender": "Female",
-        "color": "Black",
-        "breed": "Jack (Parson) Russell Terrier mix",
-        "age": "3 years old"
-    },
     "A118465": {
         "name": "STELLA (A118465)",
         "gender": "Female",
@@ -34,26 +27,12 @@
         "breed": "American Pit Bull Terrier",
         "age": "3 years old"
     },
-    "A126384": {
-        "name": "RED (A126384)",
-        "gender": "Male",
-        "color": "Red",
-        "breed": "Pit Bull Terrier",
-        "age": "1 year, 1 month old"
-    },
     "A126623": {
         "name": "SONNY (A126623)",
         "gender": "Male",
         "color": "Tan",
         "breed": "Boxer and Labrador Retriever",
         "age": "11 years old"
-    },
-    "A126631": {
-        "name": "ARLO (A126631)",
-        "gender": "Male",
-        "color": "Tan",
-        "breed": "Labrador Retriever mix",
-        "age": "1 year, 1 month old"
     },
     "A126766": {
         "name": "ALMA (A126766)",
@@ -83,5 +62,5 @@
         "breed": "Border Collie mix",
         "age": "7 years old"
     },
-    "__last_run__": "November 06, 2026 12:30 AM"
+    "__last_run__": "November 07, 2026 12:30 AM"
 }
